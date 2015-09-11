@@ -1,11 +1,13 @@
-FROM microsoft/aspnet:1.0.0-beta4
+FROM microsoft/aspnet
 
-COPY . /app
+COPY project.json /app/
 
 WORKDIR /app
 
-RUN ["dnu", "restore"]
+RUN ["kpm", "restore"]
+
+COPY . /app
 
 EXPOSE 5004
 
-ENTRYPOINT ["dnx", ".", "kestrel"]
+ENTRYPOINT ["k", "kestrel"]
