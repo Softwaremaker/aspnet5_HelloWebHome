@@ -1,9 +1,9 @@
-FROM microsoft/aspnet:1.0.0-beta6
+FROM microsoft/aspnet
 
-ADD . /app
 COPY project.json /app/
 WORKDIR /app
+RUN ["dnu", "restore"]
 COPY . /app
 
 EXPOSE 5004
-ENTRYPOINT ["./kestrel"]
+ENTRYPOINT ["dnx", "project.json", "kestrel"]
