@@ -4,7 +4,7 @@ COPY project.json /app/
 
 WORKDIR /app
 
-RUN ["kpm", "restore"]
+RUN ["dnu", "restore"]
 
 COPY . /app
 
