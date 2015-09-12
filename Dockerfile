@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . /app
 
 EXPOSE 5004
-ENTRYPOINT ["./kestrel"]
+ENTRYPOINT ["dnx", "-p", "project.json", "kestrel"]
