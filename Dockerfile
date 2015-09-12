@@ -6,4 +6,4 @@ RUN ["dnu", "restore"]
 COPY . /app
 
 EXPOSE 5004
-ENTRYPOINT ["dnx", "project.json", "kestrel"]
+ENTRYPOINT ["dnx", ".", "kestrel"]
