@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . /app
 
 EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "kestrel"]
+ENTRYPOINT ["dnx", ".", "kestrel", "", "--server.urls", "http://wtmsdemolinuxubuntu.westus.cloudapp.azure.com:5004"]
