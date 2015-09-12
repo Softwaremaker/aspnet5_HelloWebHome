@@ -19,11 +19,12 @@
         "Microsoft.Framework.Logging.Console": "1.0.0-beta6"
     },
     "commands": {
-        "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001",
-        "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004"
+        "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://wtmsdemolinuxubuntu.westus.cloudapp.azure.com:5001",
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://wtmsdemolinuxubuntu.westus.cloudapp.azure.com:5004"
     },
     "frameworks": {
         "dnx451": { },
         "dnxcore50": { }
     }
 }
+
